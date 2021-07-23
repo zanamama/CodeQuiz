@@ -1,15 +1,16 @@
 # CodeQuiz
+
 04 Web APIs: Code Quiz
 In this week's homework assignment, I will be building a timed coding quiz with multiple-choice questions. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that I write. It will have a clean, polished, and responsive user interface.
 
 This week’s coursework will equip me with all the skills I need to succeed in this assignment.
 
-User Story
+##User Story
 AS A coding boot camp student
 I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
 SO THAT I can gauge my progress compared to my peers
 
-Acceptance Criteria
+#Acceptance Criteria
 GIVEN I am taking a code quiz
 WHEN I click the start button
 THEN a timer starts and I am presented with a question
@@ -24,7 +25,7 @@ THEN I can save my initials and my score
 Mock-Up
 The following animation demonstrates the application functionality:
 
-A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.
+##A user clicks through an interactive coding quiz, then enters initials to save the high score before resetting and starting over.
 
 Grading Requirements
 This homework is graded based on the following criteria:
