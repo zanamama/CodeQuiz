@@ -50,16 +50,28 @@ timer = setInterval(function(){
     if(time === 0){
         alert('game over, time oup');
         //calls the function to end the game
+        // function pad(n) {
+        //     return (n<10? '0':'') + n;
+        //   }
+          
+        //   function startTimer(m,s) {
+        //     document.getElementById('timer').innerHTML = pad(m) + ":" + pad(s);
+        //     s -= s? 1 : m-- && -59;
+        //     if (m != -1) 
+        //       setTimeout(function(){startTimer(m,s)},1000);
+        //       console.log ("ok")
+          }
     }
-    time--;
-    timeSpan.innerHTML = time;
+}
+ //   time--;
+ //   timeSpan.innerHTML = time;
 
 
-}, 1000)
+//}, 1000)
 
 //call the fucntion to render questions
-    renderQuestions()
-}
+//   renderQuestions()
+//}
 
 function renderQuestions(){
   //  console.log(questions[indexPosition].question)
@@ -75,18 +87,16 @@ function renderQuestions(){
         choicesEl.append(btn)
     }
 };
-//Bel
-
-function checkAnswer(){
-    if (this.value = correctAnswer){
-        return questionEl;
-    }
-    else
-        time=-5;
-        console.log('sucks')
-};
-
-
+//Below
+//FIX THE BELOW. Need to be able to move onto the next question.
+// function checkAnswer(): {
+//     if (this.value = correctAnswer){
+//         return questionEl;
+//     }
+//     else
+//         time=-5;
+//         console.log('sucks')
+// };
 
 
 
