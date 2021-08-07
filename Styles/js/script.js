@@ -2,7 +2,7 @@ var startBtn = document.getElementById('Start-Game');
 var timeSpan = document.getElementById('timer');
 var questionEl = document.getElementById('question');
 var choicesEl = document.getElementById('choices');
-
+var displayHighscore = document.querySelector("#display-highscore");
 
 var questions = [
     {
@@ -29,7 +29,8 @@ var questions = [
         question: 'How do you change the text color in a document using CSS?',
         choices: ['text.color', 'background-color', 'color', 'text-color'],
         correctAnswer: 'color'
-    }];
+    }
+];
 
 
 
@@ -44,30 +45,29 @@ var indexPosition = 0;
 function startQuiz(){
 //hide start game button
 startBtn.style.display = 'none';
-//start the timer
-timeSpan.innerHTML = time
+//showing the initial time for the timer
+timeSpan.innerHTML = time;
+//timer begins counting down
 timer = setInterval(function(){
     if(time === 0){
-        alert('game over, time oup');
+        alert('game over, times up');
         //calls the function to end the game
-        // function pad(n) {
-        //     return (n<10? '0':'') + n;
-        //   }
+//         function pad(n) {
+//             return (n<10? '0':'') + n;
+//           }
           
-        //   function startTimer(m,s) {
-        //     document.getElementById('timer').innerHTML = pad(m) + ":" + pad(s);
-        //     s -= s? 1 : m-- && -59;
-        //     if (m != -1) 
-        //       setTimeout(function(){startTimer(m,s)},1000);
-        //       console.log ("ok")
-          }
+//           function startTimer(m,s) {
+//             document.getElementById('timer').innerHTML = pad(m) + ":" + pad(s);
+//             s -= s? 1 : m-- && -59;
+//             if (m != -1) 
+//               setTimeout(function(){startTimer(m,s)},1000);
+//               console.log ("ok")
     }
-}
- //   time--;
- //   timeSpan.innerHTML = time;
+} , 1000)
+//}
+  // timer--;
+   // timeSpan.innerHTML = time;
 
-
-//}, 1000)
 
 //call the fucntion to render questions
 //   renderQuestions()
@@ -101,5 +101,5 @@ function renderQuestions(){
 
 
 
-//event listern for start button
+//event listern for start button. A user clicks start. 
 startBtn.addEventListener('click', startQuiz)

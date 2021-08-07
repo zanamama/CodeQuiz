@@ -1,36 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Code Quiz</title>
-    <link rel="stylesheet" href="css/styles.css" />
-</head>
-<body>
+    <link rel="stylesheet" href="styles/CSS/styles.css" />
+  </head>
+  <body>
     <header>
-        <h1> Code Quiz - 2021 Speed Racer</h1>
-        <div id="last-high-score"></div>
+      <h1>Code Quiz - 2021 Speed Racer</h1>
+      <div id="last-high-score"></div>
     </header>
-        <main>
-            <h2> Are YOU a Genius?!</h2>
-            <p>In this game, you are required to select the correct answer to the questions that appear on the screen, as FAST AS YOU CAN! There will be a countdown timer, and this is not a drill! If you get confused, maybe this quiz just isn't for you. And if you're not confused, then why are you still reading this? Let's get ready to RUMBLE!!!</p>
-           
-            <p>Time: <span id='timer'></span></p>
-            <div class ="controls">
-                <button id="Start-Game" class="start-button button">START GAME</button>
-            </div>
-            <div class = "check-btn"></div>
-                <button id="Check-btn" class="check-answer button">CHECK</button>
+    <main>
+      <h2>Are YOU a Genius?!</h2>
+      <p>
+        In this game, you are required to select the correct answer to the
+        questions that appear on the screen, as FAST AS YOU CAN! There will be a
+        countdown timer, and this is not a drill! If you get confused, keep
+        going. And if you're not confused, then let's get ready to RUMBLE!!!
+      </p>
 
+      <p>Time: <span id="timer"></span></p>
+      <div class="controls">
+        <button id="Start-Game" class="start-button button">START GAME</button>
+      </div>
+      <div class="timer">
+        Time left: <span id="timer-countdown">60 Seconds</span>
+      </div>
+      <div class="check-btn"></div>
+      <button id="Check-btn" class="check-answer button">CHECK</button>
 
-            <div id='quizArea'>
-                <h3 id='question'></h3>
-                <div id='choices'></div>
-            </div>
-            
-        </main>
+      <div id="quizArea">
+        <h3 id="question"></h3>
+        <div id="choices"></div>
+      </div>
+    </main>
 
-        <script src="script.js"></script>
-</body>
+    <script src="styles/js/script.js"></script>
+  </body>
 </html>
