@@ -3,7 +3,7 @@
 }
 
 header {
-  background-color: yellow;
+  background-color: yellow !important;
   color: blue;
   border-style: solid;
   padding: 20px;

@@ -65,8 +65,8 @@ timer = setInterval(function(){
     }
 } , 1000)
 //}
-  // timer--;
-   // timeSpan.innerHTML = time;
+  timer--;
+   timeSpan.innerHTML = time;
 
 
 //call the fucntion to render questions
@@ -102,4 +102,4 @@ function renderQuestions(){
 
 
 //event listern for start button. A user clicks start. 
-startBtn.addEventListener('click', startQuiz)
+startBtn.addEventListener('click', startQuiz);
