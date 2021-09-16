@@ -1,9 +1,12 @@
 var startBtn = document.getElementById("start-game");
-var timeSpan = document.getElementById('timer');
 var questionEl = document.getElementById('question');
 var choicesEl = document.querySelector("#choices");
+var timerCountdown = document.querySelector("#timer-countdown");
 var displayHighscore = document.querySelector("#display-highscore");
 
+var questionsArray = [];
+var highScore = [];
+var allQuestions = 0;
 var questions = [
     {
         question: 'What is CSS short for?',
