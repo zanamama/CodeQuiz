@@ -21,3 +21,12 @@ header {
   text-shadow: 20px, 20px;
   border-radius: 20px;
 }
+
+.enter {
+  background-color: grey;
+  margin-top: 30px;
+  font-size: 30px;
+  padding: 30px, 30px;
+  text-shadow: 20px, 20px;
+  border-radius: 20px;
+}

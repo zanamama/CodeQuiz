@@ -1,7 +1,7 @@
-var startBtn = document.getElementById('Start-Game');
+var startBtn = document.getElementById("start-game");
 var timeSpan = document.getElementById('timer');
 var questionEl = document.getElementById('question');
-var choicesEl = document.getElementById('choices');
+var choicesEl = document.querySelector("#choices");
 var displayHighscore = document.querySelector("#display-highscore");
 
 var questions = [
